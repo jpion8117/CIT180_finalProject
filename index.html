@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>jP-Codes - Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/screen.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" type="image/png" href="media/favicon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&family=Orbitron&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="col-10 col-m-10">
+            <h1 style="display: inline;">jP</h1> <h3 style="display: inline;">- Developer - Student - Frontline Worker</h3>
+        </header>
+        <nav class="col-1 col-m-2">
+            <ul>
+                <li class="homeLink" id="homeLink1"><a href="about.html">About</a></li>
+                <li class="homeLink" id="homeLink2"><a href="resume.html">Resume</a></li>
+                <li class="homeLink" id="homeLink3"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main class="col-7 col-m-7">
+           <div style="float: left; width: 58%;">
+                <details><summary><h3 style="display: inline;">Student</h3></summary> As a student attending NMC I've demonstrated top notch performace. Begining in the 2021 spring semester I made the dean's list while working full time and assisting fellow classmates through weekly online study groups I arranged.<br><br></details>
+                <details><summary><h3 style="display: inline;">Hobbist Programmer</h3></summary> I began learning programming over a decade ago as a hobby and am now working on building on that foundational knowledge and turn my hobby into a career.<br><br></details>
+                <details><summary><h3 style="display: inline;">Frontline Grocery Manager</h3></summary> While many people were switching to remote work, I was working more in-person hours. Through 2020 I was in charge of maintaining order and keeping an entire store full of co-workers and customers safe.<br><br></details><br>
+           </div>
+
+           <img id="jp-kayaking" class="randomImg" src="media/jp-kayaking.jpg">
+           <img id="jp-camping" class="randomImg" src="media/jp-camping.jpg">
+           <img id="jp-sunset" class="randomImg" src="media/jp-sunset.jpg">
+        </main>
+        <aside class="col-1 col-m-10 iconbar">
+            <p>
+                <a href="mailto:contact@jp-codes.info"><i class="fa fa-envelope"></i></a>
+                <a href="https://github.com/jpion8117"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/josh-pion-558725203?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BlgvU%2B0naSpKMu5y0tfMBFA%3D%3D"><i class="fa fa-linkedin"></i></a>
+            </p>
+        </aside>
+        <script>
+            function loadRandomImg()
+            {
+                var images = document.getElementsByClassName("randomImg");
+                var numberOfImages = images.length -1;
+                var selectedImage = Math.random() * numberOfImages;
+                selectedImage = Math.round(selectedImage)
+
+                document.getElementById(images[selectedImage].id).style.display = "inline";
+            }
+
+            window.onload = loadRandomImg;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+body
+{
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    color: black;
+}
+nav
+{
+    display: none;
+}
+header
+{
+    display: none;
+}
+button
+{
+    display: none;
+}
+.iconbar
+{
+    display: none;
+}
+main
+{
+    border: none;
+    background-color: white;
+    color: black;
+}
+.resume~hr
+{
+    border-top: double black 5px;
+}
+.displayOnPrint
+{
+    display: inline;
+}
+footer
+{
+    display: none;
+}
